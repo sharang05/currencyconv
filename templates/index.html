@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block body %}
+
+	<form action="{{ url_for('currency') }}" method="post">
+		<input type="text" name="currencyname" placeholder="Enter the currency name">
+		<button>Submit</button>
+	</form>
+{% endblock %}
